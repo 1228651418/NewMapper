@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jyx.edu.NewMapper180831.basemapper.mapper.PermissionMapper">
+
+ <select id="findPermissionIdByRoleId" parameterType="Long" resultType="Long">
+	SELECT permissions_id FROM  sys_role_permissions  WHERE roles_id = #{id}
+ </select>
+
+</mapper>
